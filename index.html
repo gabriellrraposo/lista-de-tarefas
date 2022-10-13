@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your task list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="divWrapper">
+            <form>
+                <label>Add new task:</label>
+                <input type="text" placeholder="Ex.: Sweep the house" id="txtTask">
+                <button type="button" onclick="createTask()">Confirm</button>
+            </form>
+            <ul id="taskList">
+                <li>
+                    <span>Buy lettuce</span>
+                    <div class="buttonGroup">
+                        <button><i class="fa-solid fa-check" id="btnCheck" onclick="completeTask()"></i></button>
+                        <button><i class="fa-solid fa-trash" id="btnDelete" onclick="deleteTask()"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <span>Do the laundry</span>
+                    <div class="buttonGroup">
+                        <button><i class="fa-solid fa-check" id="btnCheck"></i></button>
+                        <button><i class="fa-solid fa-trash" id="btnDelete"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul class="completedTasks">
+
+            </ul>
+        </section>
+    </main>
+    
+    
+    <script src="https://kit.fontawesome.com/415f58636f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

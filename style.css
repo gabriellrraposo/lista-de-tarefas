@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    padding-top: 5%;
+}
+
+main {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+button {
+    background-color: rgb(32, 24, 24);
+    color: white;
+    border-radius: .2rem;
+
+    
+}
+
+form button {
+    width: 100%;
+    margin: 3% 0;
+}
+
+ul {
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid grey;
+    border-radius: .2rem;
+    margin: 4% 0;
+    padding: 3%;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    display: none;
+
+    cursor: pointer;
+}
+
+li:hover button {
+    display: inline;
+}
+
+#btnCheck {
+    color: green;
+}
+
+#btnDelete {
+    color: rgb(218, 6, 6);
+}
+
+#txtTask {
+    display: block;
+}
