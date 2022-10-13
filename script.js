@@ -13,9 +13,20 @@ let completeTask = (e) => {
     let task = e.target.parentElement.parentElement.parentElement
     let doneList = document.querySelector("#doneList")
     let doneTask = task.innerHTML
-    doneList.innerHTML += doneTask
+    
+    doneList.lastElementChild.innerHTML += `<li>${doneTask}</li>`
+    console.log(doneList)
     task.remove()
 }
+
+let deleteTask = (e) => {
+    let task = e.target.parentElement.parentElement.parentElement
+    task.remove()
+}
+
+let btnDelete = document.querySelectorAll('#btnDelete').forEach(item => {
+    item.addEventListener('click', deleteTask)
+})
 
 let btnCheck = document.querySelectorAll("#btnCheck").forEach(item => {
     item.addEventListener('click', completeTask)
