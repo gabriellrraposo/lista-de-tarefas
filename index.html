@@ -15,12 +15,13 @@
                 <input type="text" placeholder="Ex.: Sweep the house" id="txtTask">
                 <button type="button" onclick="createTask()">Confirm</button>
             </form>
+            <h4>To-Do</h4>
             <ul id="taskList">
                 <li>
                     <span>Buy lettuce</span>
                     <div class="buttonGroup">
-                        <button><i class="fa-solid fa-check" id="btnCheck" onclick="completeTask()"></i></button>
-                        <button><i class="fa-solid fa-trash" id="btnDelete" onclick="deleteTask()"></i></button>
+                        <button><i class="fa-solid fa-check" id="btnCheck"></i></button>
+                        <button><i class="fa-solid fa-trash" id="btnDelete"></i></button>
                     </div>
                 </li>
                 <li>
@@ -32,9 +33,10 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="doneList">
+            <h4>Done:</h4>
             <ul class="completedTasks">
-
+                
             </ul>
         </section>
     </main>

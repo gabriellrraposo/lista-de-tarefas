@@ -9,10 +9,17 @@ let createTask = () => {
     }
 }
 
-let completeTask = () => {
-    let task = this
-    console.log(task)
+let completeTask = (e) => {
+    let task = e.target.parentElement.parentElement.parentElement
+    let doneList = document.querySelector("#doneList")
+    let doneTask = task.innerHTML
+    doneList.innerHTML += doneTask
+    task.remove()
 }
+
+let btnCheck = document.querySelectorAll("#btnCheck").forEach(item => {
+    item.addEventListener('click', completeTask)
+})
 
 // let deleteTask = () => {
 //     let task = this
